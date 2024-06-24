@@ -1,0 +1,90 @@
+#hero{
+    height: 800px;
+    background-image: url("images/places/island.jpg");
+    background-position: center;
+    background-size: cover;
+} /*background image can be added directly to the css*/ /*background-size: fits the whole image*/
+
+#hero-content{
+    width: 900px;
+    background-color: rgba(51, 47, 47, 0.8);
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+} /*with margin adjust the box position, padding: position of text inside the box*/
+/* position:relative allows to change the box position, if set on static no change will be executed. Then with top or bottom can control position. */
+#hero-content h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+#hero-content p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#hero-content a{
+    text-decoration: none;
+    background-color: rgb(255, 251, 0);
+    padding: 10px 15px;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+
+#hero-content a:hover{
+    background-color: rgb(255, 230, 0);
+}
+
+#highlight{
+    padding: 24px;
+    background: linear-gradient(130deg, rgb(227, 255, 253), rgb(78, 219, 193)) ;
+} /*adding padding here helps to avoid margin collapsbtw highlight and hero(above it) part*/
+
+#highlight h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(58, 65, 64);
+    margin: 24px 0;
+}
+#Destinations{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    justify-content: center;
+} /*with defines the width of this part, can be adjusted to the need, by adding margine:auto we can adjust the items automatically*/
+/* justify-content helps to put the items in the center */
+
+.Destination{
+    margin: 0 20px;
+}
+.Destination p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(124, 123, 123);
+    margin: 20px 0;
+}
+.Destination img{
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 8px;
+    object-fit: cover;
+} /* height can change the size of images, width help to keep the size of all different images equally fit if used % instead of px*/
+/* with object-fit fit the picture indide its frame so wont look distorted. */
+.Destination strong{
+    color: rgb(0, 160, 117);
+}
